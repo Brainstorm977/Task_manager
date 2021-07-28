@@ -6,6 +6,7 @@ const Header = () => {
 };
 
 const StyledHeader = styled.h1`
+	color: #f50057;
 	text-align: center;
 	margin-bottom: 50px;
 	padding-top: 30px;

@@ -6,11 +6,11 @@ const Modal = ({ deleteConfirmHandler, rejectDeleteTask }) => {
 		<StyledModal>
 			<ModalDialog>
 				<h3>Delete task?</h3>
-				<button className="delete" onClick={deleteConfirmHandler}>
-					Delete
-				</button>
 				<button className="cancel" onClick={rejectDeleteTask}>
 					Cancel
+				</button>
+				<button className="delete" onClick={deleteConfirmHandler}>
+					Delete
 				</button>
 			</ModalDialog>
 		</StyledModal>
@@ -41,22 +41,23 @@ const ModalDialog = styled.div`
 		margin-bottom: 20px;
 	}
 	button {
+		color: white;
 		width: 90px;
 		height: 40px;
 		border-radius: 5px;
 		margin: 10px;
 		border: none;
 		cursor: pointer;
-		transition: all 0.3s ease;
+		transition: all 0.2s ease;
 		&:hover {
-			transform: scale(1.1);
+			transform: scale(1.05);
 		}
 	}
 	.delete {
-		background-color: #5ee651;
+		background-color: #2e4159;
 	}
 	.cancel {
-		background-color: #e93131;
+		background-color: #f2441d;
 	}
 `;
 
